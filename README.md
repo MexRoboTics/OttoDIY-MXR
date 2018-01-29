@@ -1,4 +1,7 @@
 # OttoDIY-MXR
+![Otto-MXR](https://github.com/MexRoboTics/OttoDIY-MXR/blob/master/Images/Otto_Assembly_All.PNG)
+![Otto-MXR](https://github.com/MexRoboTics/OttoDIY-MXR/blob/master/Images/Otto_Assembly_Transparency.PNG)
+
 This is a version tested of OttoDIY PLUS and will change with the time. I am currently make some changes..
 
 To chek the original project go to: https://github.com/OttoDIY/PLUS
