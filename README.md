@@ -10,7 +10,7 @@ To chek the original project go to: https://github.com/OttoDIY/PLUS
 # Description:
 Here are modified libraries and sketch tested for Otto DIY robot, the capabilties are: Led Matrix Mouth, Bluetooth connection, two action mode buttons,and some more in development...
 
-Compatibility with [Zowi App](https://play.google.com/store/apps/details?id=com.bq.zowi) or [Otto DIY App](https://play.google.com/store/apps/details?id=appinventor.ai_juanfelixmateos.OTTO_DIY_Bluetooth_Controller&hl=es App)
+Compatibility with [Zowi App](https://play.google.com/store/apps/details?id=com.bq.zowi) or [Otto DIY App](https://play.google.com/store/apps/details?id=appinventor.ai_juanfelixmateos.OTTO_DIY_Bluetooth_Controller&hl=es)
 
 # Changes
 In order to add more sensors and use the next Led Matrix:
@@ -23,6 +23,7 @@ I have made size modification to Otto parts.
 - Arduino Nano Shield I/O Extension Board Expansion
 - Mini usb cable.
 - HC-SR04 Ultrasound sensor.
+- 1 Matrix led 8x8 max7219 TH
 - Mini servo MG90 9g x4 (each one should come with 2 pointed screws and one small screw also arm keys to attach legs and feet).
 - passive Buzzer 12mm 5V
 - Female to Female breadboard connectors cable 10cm x24.
