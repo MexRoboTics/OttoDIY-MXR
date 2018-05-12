@@ -119,8 +119,11 @@ void setup(){
   //Serial communication initialization
   Serial.begin(115200); //init for Bluetooth HC-06 interface via Software Serial 
  
-  pinMode(PIN_SecondButton,INPUT_PULLUP); // So you need enter a 0V level to activate
-  pinMode(PIN_ThirdButton,INPUT_PULLUP);
+  //pinMode(PIN_SecondButton,INPUT_PULLUP); // So you need enter a 0V level to activate
+  //pinMode(PIN_ThirdButton,INPUT_PULLUP);
+         
+  pinMode(PIN_SecondButton,INPUT); // So you need enter a 5V level to activate
+  pinMode(PIN_ThirdButton,INPUT);
   
   //Set the servo pins
   Otto_MXR.init(PIN_YL,PIN_YR,PIN_RL,PIN_RR,false,PIN_NoiseSensor,PIN_Buzzer,PIN_Trigger,PIN_Echo);
@@ -139,9 +142,11 @@ void setup(){
   randomSeed(125);//analogRead(A3) but I haven't analogue sensor
 
   //Interrumptions
-  enableInterrupt(PIN_SecondButton, secondButtonPushed, FALLING); // In case that in the previous pinMode you use only INPUT, change this by RISING
-  enableInterrupt(PIN_ThirdButton, thirdButtonPushed, FALLING);
-
+  //enableInterrupt(PIN_SecondButton, secondButtonPushed, FALLING); // In case that in the previous pinMode you use only INPUT, change this by RISING
+ // enableInterrupt(PIN_ThirdButton, thirdButtonPushed, FALLING);
+  enableInterrupt(PIN_SecondButton, secondButtonPushed, RISING); // In case that in the previous pinMode you use INPUT_PULLUP, change this by FALLING
+  enableInterrupt(PIN_ThirdButton, thirdButtonPushed, RISING);
+         
   //Setup callbacks for SerialCommand commands 
   SCmd.addCommand("S", receiveStop);      //  sendAck & sendFinalAck
   SCmd.addCommand("L", receiveLED);       //  sendAck & sendFinalAck
